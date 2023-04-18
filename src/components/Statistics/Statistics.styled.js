@@ -7,8 +7,9 @@ export const Section = styled.section`
   margin-bottom: 5px;
   max-width: 100%;
   width: 360px;
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
   border-radius: 8px;
+  background-color: ${props => props.theme.colors.background};
+  margin-bottom: 30px;
 `;
 
 export const Title = styled.h2`
@@ -32,7 +33,7 @@ export const StatListItem = styled.li`
   padding: 3 px;
   width: 100%;
   height: 100%;
-  background-color: ${props => props.theme.colors.black}; ;
+  background-color: ${props => props.bgColor};
 `;
 
 export const Label = styled.span`

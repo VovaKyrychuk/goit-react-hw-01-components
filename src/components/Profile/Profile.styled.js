@@ -6,9 +6,11 @@ export const ProfileCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10px;
-
+  background-color: ${props => props.theme.colors.background};
   max-width: 100%;
   width: 380px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 `;
 
 export const Description = styled.div`
@@ -26,7 +28,7 @@ export const Avatar = styled.img`
   border-radius: 50%;
 
   &:hover {
-    background: ${props => props.theme.colors.background};
+    background: ${props => props.theme.colors.white};
   }
 `;
 
@@ -86,6 +88,6 @@ export const Item = styled.li`
   flex-direction: column;
   width: 100%;
   &:hover {
-    background: ${props => props.theme.colors.background};
+    background: ${props => props.theme.colors.white};
   }
 `;

@@ -4,8 +4,8 @@ export const Table = styled.table`
   margin: 0 auto;
   margin-bottom: 5px;
   padding: 5px;
-  max-width: 90%;
-  width: 90%;
+  max-width: 100%;
+  width: 380px;
 `;
 
 export const Thead = styled.thead`

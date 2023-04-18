@@ -9,7 +9,7 @@ export const FriendsList = styled.ul`
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: 30px;
 `;
 
 export const FriendsItem = styled.li`
