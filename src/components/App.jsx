@@ -1,3 +1,5 @@
+import { GlobalStyle } from './GlobalStyle';
+
 import user from './Profile/user.json';
 import { Profile } from './Profile/Profile';
 
@@ -16,8 +18,9 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        justifyContent: 'center',
+        flexDirection: 'column',
         alignItems: 'center',
+        justifyContent: 'space-between',
         fontSize: 40,
         color: '#010101',
       }}
@@ -32,6 +35,7 @@ export const App = () => {
       <Statistics stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
+      <GlobalStyle />
     </div>
   );
 };
