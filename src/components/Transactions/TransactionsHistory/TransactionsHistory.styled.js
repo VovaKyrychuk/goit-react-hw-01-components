@@ -24,10 +24,6 @@ font-size: 16px;
    background-color: ${props => props.theme.colors.background};
 `;
 
-export const LastTr = styled(Tr)`
-  background-color: ${props => props.theme.colors.white};
-`;
-
 export const Th = styled.th`
   padding: 0.5rem 0;
   padding-left: 5px;
