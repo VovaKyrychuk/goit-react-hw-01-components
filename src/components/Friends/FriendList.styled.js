@@ -22,13 +22,12 @@ export const FriendsItem = styled.li`
   max-width: 100%;
   width: 360px;
   border-radius: 8px;
-  box-shadow: -1px -1px 1px #fff, 1px 1px 1px #babecc;
   background-color: ${props => props.theme.colors.background};
 `;
 
 export const Status = styled.span`
   display: block;
-  margin-left: 1.625rem;
+  margin-left: 26px;
   width: 16px;
   height: 16px;
   border-radius: 50%;

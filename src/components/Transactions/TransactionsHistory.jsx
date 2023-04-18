@@ -1,54 +1,26 @@
 import PropTypes from 'prop-types';
-
-// export const TransactionHistory = ({ items }) => {
-//   return (
-//     <table class="transaction-history">
-//       <thead>
-//         <tr>
-//           <th>Type</th>
-//           <th>Amount</th>
-//           <th>Currency</th>
-//         </tr>
-//       </thead>
-//       <tbody>
-//         {items.map(({ item, idx }) => (
-//           <tr
-//             key={item.id}
-//             id={item.id}
-//             index={idx}
-//             type={item.type}
-//             amount={item.amount}
-//             currency={item.currency}
-//           />
-//         ))}
-//       </tbody>
-//     </table>
-//   );
-// };
-
-// TransactionHistory.propTypes = {
-//   items: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       type: PropTypes.string.isRequired,
-//       amount: PropTypes.string.isRequired,
-//       currency: PropTypes.string.isRequired,
-//     }).isRequired
-//   ).isRequired,
-// };
+import {
+  Table,
+  Thead,
+  Tr,
+  Th,
+  Tbody,
+  Td,
+  LastTr,
+} from './TransactionsHistory.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
-      </thead>
+    <Table>
+      <Thead>
+        <Tr>
+          <Th>Type</Th>
+          <Th>Amount</Th>
+          <Th>Currency</Th>
+        </Tr>
+      </Thead>
 
-      <tbody>
+      <Tbody>
         {items.map((item, idx) => {
           return (
             <TableRow
@@ -61,18 +33,18 @@ export const TransactionHistory = ({ items }) => {
             />
           );
         })}
-      </tbody>
-    </table>
+      </Tbody>
+    </Table>
   );
 };
 
 const TableRow = ({ type, amount, currency, index }) => {
   return (
-    <tr idx={index}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <LastTr idx={index}>
+      <Td>{type}</Td>
+      <Td>{amount}</Td>
+      <Td>{currency}</Td>
+    </LastTr>
   );
 };
 

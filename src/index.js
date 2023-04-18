@@ -5,14 +5,14 @@ import { App } from 'components/App';
 
 const theme = {
   colors: {
-    black: '#000',
-    white: '#fff',
+    black: '#000000',
+    white: '#ffffff',
     text: '#2a2a2a',
     background: '#e9edff',
     primary: '#2b3162',
     secondary: '#1a236a;',
-    accent: '#9e0202',
-    muted: '#dddff8',
+    accent: '#0000ff',
+    gray: '#a0a0a0',
   },
 };
 

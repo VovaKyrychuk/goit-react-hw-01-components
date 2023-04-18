@@ -17,6 +17,16 @@ export const FriendList = ({ friends }) => {
   );
 };
 
+const FriendListItem = ({ avatar, name, isOnline }) => {
+  return (
+    <FriendsItem>
+      <Status isOnline={isOnline}></Status>
+      <Avatar src={avatar} alt="User avatar" width="48" />
+      <Name>{name}</Name>
+    </FriendsItem>
+  );
+};
+
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
@@ -26,14 +36,4 @@ FriendList.propTypes = {
       isOnline: PropTypes.bool.isRequired,
     }).isRequired
   ).isRequired,
-};
-
-const FriendListItem = ({ avatar, name, isOnline }) => {
-  return (
-    <FriendsItem>
-      <Status isOnline={isOnline}></Status>
-      <Avatar src={avatar} alt="User avatar" width="48" />
-      <Name>{name}</Name>
-    </FriendsItem>
-  );
 };
